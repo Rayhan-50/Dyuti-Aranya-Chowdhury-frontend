@@ -22,7 +22,10 @@ import useAdmin from "../hooks/useAdmin";
 
 const Dashboard = () => {
   const { user, logOut } = useContext(AuthContext);
-  const [isAdmin, isAdminLoading] = useAdmin();
+   const [isAdmin, isAdminLoading] = useAdmin();
+
+ 
+
 
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const navigate = useNavigate();

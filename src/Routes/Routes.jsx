@@ -12,7 +12,7 @@ import Loading from "../components/Loading/Loading";
 import Profile from "../pages/Dashboard/Profile";
 import NotFound from "../pages/NotFoumd";
 
-import AboutUs from "../pages/AboutUs";
+
 import Supporters from "../pages/Supporters/Supporters";
 import Donate from "../pages/Donate/Donate";
 
@@ -42,10 +42,10 @@ export const router = createBrowserRouter([
         path: "/",
         element: <Home></Home>,
       },
-      {
-        path: "/about",
-        element: <AboutUs />,
-      },
+      // {
+      //   path: "/about",
+      //   element: <AboutUs />,
+      // },
       {
         path: "/supporters",
         element: <Supporters />,
@@ -76,9 +76,9 @@ export const router = createBrowserRouter([
       {
         path: "manage-users",
         element: (
-          <AdminRoute>
+           <AdminRoute>
             <ManageUsers />
-          </AdminRoute>
+           </AdminRoute>
         ),
       },
 
